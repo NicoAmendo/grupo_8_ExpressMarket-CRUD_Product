@@ -71,13 +71,6 @@ let productosController = {
         res.redirect("/productos/crear");
     }   
     
-    editarOtro: function(req, res){
-        db.Producto.findByPk(req.params.id)
-            .then(function(productos){
-                return res.render("editarProductos", {productos:productos});
-
-            })
-
 
 }
 
