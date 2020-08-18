@@ -1,0 +1,50 @@
+<%-include('partials/head.ejs') %>
+<body>
+    <%-include('partials/header.ejs') %>
+	
+	<div class= "container" id= "products-wrapper">
+		<div class = "row">
+			<div class="col-12">
+				<h2 class="products-title">Productos de Almacén</h2>
+				<script>
+					document.querySelector("products-title").innerHTML += "hola";
+    
+			   </script>
+			</div>
+			<% for (product of products) { 
+				%>
+			<div class="col-12 col-sm-6 col-lg-3">
+					<section class="product-box">
+						<a href="/product/detail/<%= product.id %>/visited"></a>
+					<figure class="product-box_image">
+						<img src="/images/products/<%= product.imagen %>" alt="imagen de producto">
+					</figure>
+					<article class="product-box_data">					
+						<p><%= product.nombre %></p>
+						<p><%= product.mensaje %></p>
+						<p class="estiloDelPrecio"><%= product.price %></p>
+						<i class="fas fa-truck"></i>
+						<button type="button" class="btn btn-warning" id = "buttonAgregar">Agregar al carrito</button>
+		 			</article>
+			
+	             </section>
+			</div>
+			<% } %>
+		</div>
+</div>
+    <%-include('partials/footer.ejs') %> 
+<script>
+	window.addEventListener("load", function(){
+		let button = document.querySelectorAll(".product-box_data i");
+		let elimimar = document.getElementsByClassName(".product-box_data i");
+      for(let i = 0; i < button.length; i++){ 
+		 	button[i].addEventListener("click", function(){
+			this.style.backgroundColor= "red";
+		})
+	}
+
+	})
+</script>
+	<script src = "../public/Frontjs/agregaralcarrito.js"></script>
+</body>
+</html>

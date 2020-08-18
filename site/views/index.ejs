@@ -1,0 +1,113 @@
+
+ <%- include("partials/head.ejs")%>
+	<body>	
+		<%-include('partials/header.ejs') %>
+			
+		<div class="container" id="ContenedorHome">		
+
+		  <!---banner --->
+		<section>
+			<img id="banner-2" src="/images/header/fácil.gif" alt="Funny image" width="940" height="250"> 
+		<section>
+				
+
+		  <!----marcas destacadas--->
+			<section class="home-desktop_brands wrapper banners-wrapper promos-site">
+				<h2 class= "titulo-home"> OFERTAS Y PROMOCIONES</h2>
+				
+				<div class= "container-banners">
+					<div class="row-0">
+					<div class= "col-4">
+							<div class="box"> 
+								<div class="box-imagen">
+									<a href=""><img class="photo01" src="images/mastellone.jpg" alt="pdto 01"></a></div>
+									<div class="box-texto">
+									 <h3 class= "box-texto-01"> LACTEOS </h3> 
+								</div>	 
+							</div>
+								
+					</div>
+
+					<div class= "col-4">
+							<div class="box"> 
+								<div class="box-imagen">
+									<img class="photo02" src="images/oralB.jpg" alt="pdto 02"></div>
+									<div class="box-texto">
+							 		<h3 class= "box-texto-01"> MIRÁ LAS OFERTAS </h3> 
+								</div>
+							</div>
+					</div>
+
+								
+					
+					<div class= "col-4">
+							<div class="box"> 
+								<div class="box-imagen">
+									<img class="photo03" src="images/quilmes.jpg" alt="pdto 03"></div>
+									<div class="box-texto">
+							 		<h3 class= "box-texto-01"> CERVEZA QUILMES </h3> 
+							</div>
+						</div>
+							
+					</div>	
+
+				</div>
+				</div>
+				
+			</section>		
+			<!-----nuestras recetas------------------>		
+			<section class= "Nuestras-recetas">	
+				<h2 class= "titulo-home"> NUESTRAS RECETAS</h2>
+				<div class= "container-recetas">
+						<div class= "box-imagen-receta">
+							<img class="imagen-receta" src="images/cocinar.jpg" alt="pdto 04"></div>
+				
+				<div class= "buscador-recetas">
+					<h2 class= "titulo-buscador">
+						<img id="imagenfruta" class="img-fluid d-none d-md-inline-block mt-1 lazy loaded" data-src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/lemon.svg?x15333" width="26" height="26" alt="" src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/lemon.svg?x15333" data-was-processed="true">
+						<span class="mx-1">BUSCADOR DE RECETAS</span>
+						<img id= "imagenfruta" class="img-fluid d-none d-md-inline-block lazy loaded" data-src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/pizza.svg?x15333" width="26" height="26" alt="" src="https://www.supermercadosdia.com.ar/wp-content/themes/dia/images/home/recetas/pizza.svg?x15333" data-was-processed="true">
+					</h2>
+					<div class= "buscador">
+						<form class="form-inline" id= "formularioBuscador">
+							<input class="form-control" type="search" placeholder="Más recetas" aria-label="Search" id="barraDelBuscadorReceta">
+							<button class="btn btn-outline-success my-2 my-lg-4" type="submit">Buscar</button>
+						</div>
+						<iframe width= "100%" height="355" src="https://www.paulinacocina.net/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</form>
+						
+				</div>		
+			</div>	 
+			</section>
+			
+			<section class="home-banners">
+				<div class="row-1" >
+				<div class="col-6">
+					<div class="box-banner">
+						<p>Prepará una deliciosa lasagna de carne con unos sencillos pasos y los mejores ingredientes.</p>
+						<img alt=" banner-lasagna" src="images/lasagna.jpg" style="display: flex" width= 450;>
+						
+					</div>
+				</div>
+				
+				<div class="col-6">
+					<div class="box-banner">
+						<P>Una receta especial para recibir a los invitados y compartir una copa de vino.</P>
+						<img alt="banner-pollo" src="images/receta-pollo.jpg" style="display: flex;" width= 450;>	
+					</div>
+				
+				</div>
+				</div>
+			</section>		
+
+		</div>
+
+		<%-include("partials/footer.ejs")%>
+		<script src="../public/js/agregaralcarrito.js" type="text/javascript"></script>
+	</body>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/boostrap.js"></script>
+	
+	
+</html>

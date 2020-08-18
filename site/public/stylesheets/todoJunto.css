@@ -1,0 +1,812 @@
+
+
+
+/*.....header........*/
+
+.container-fluid{
+    margin-bottom: 20px;
+ } 
+ #buscadorHeader{
+    margin-top: 30px;
+    margin-left: 70px;
+ }
+ #buscadorDelMenu {
+     width:370px;
+ }
+#separado{
+   margin-bottom: 20px;
+background-image: url("../images/header/doscompus.png");
+} 
+
+
+
+.logo{
+        height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left: 0px;
+        margin-right: 120px;
+        /*background-color: rgb(218, 218, 218);*/
+      
+} 
+
+.usuario{
+     margin-left: 200px;
+     margin-top: 30px;
+}
+
+#boton{
+  background-color:rgb(233, 127, 41);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#menu{
+    /*background-color: rgb(233, 127, 41);*/
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 40px;
+    background-color: #8080802e;
+    color: rgb(233,127,41);
+    font-weight: bold;
+} 
+
+.navbar li {
+    display: inline;
+    margin-left: 70px;
+    margin-right: 60px;
+}
+
+
+.inicio {
+    padding-left: 20px;    
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(233,127,41);
+} ;
+}
+
+/*---------Home --------*/
+#ContenedorHome{
+    widows: 1500px;;
+    margin-left: 85px;
+    font-family:  "sans-serif";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:gray;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: block;
+}
+     
+#banner-2 {
+    margin-right: 50px;
+    margin-left: 83px;
+}
+
+h2.titulo-home {
+    font-family: sans-serif;
+    font-size: 25px ;
+    color: #3C763E;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 40px 0 20px;
+    min-height: 43px;
+    display: block;
+    background-color: #8080802e;
+    padding-top: 7px;
+  
+    
+}
+
+.row-0 {
+    overflow: hidden;   
+    
+    
+}
+.col-4 {
+    margin: 0px;
+    float: left;
+    position: relative;
+    padding: 13px;
+    background-color: rgb(252, 249, 249);
+}
+
+.box{
+    display: block;
+    box-sizing: border-box;
+}    
+.titulo-home:hover{
+    text-decoration: underline;
+}
+.titulo-buscador{
+    margin-left: 364px;
+    margin-top: 40px;
+    font-size: 25px;
+} 
+
+.box-texto {
+    color: #3C763E;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.section {
+    display: block;
+
+}   
+.container-banners {
+    width: 100%;
+  
+  
+    
+ }    
+  /*------------nuestras recetas-------*/
+ .imagen-receta{ 
+    margin:  20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}    
+
+.container-recetas{
+    background-image: url("../images/header/abstract-orange-stylish-wave-banner-background-vector.jpg");
+    margin-top: 29px;
+
+} 
+.box-imagen-receta{
+     display: flex;
+     position: relative;
+     left: 0px;
+     width: 100%;
+
+}
+#formularioBuscador{
+    margin-left:323px;
+    margin-right: 110px;
+}
+#barraDelBuscadorReceta {
+    width: 400px;
+    margin-right: 5px;
+}
+.row-1 {
+    width: 100%;
+    overflow: hidden;   
+    margin-left: 60px;  
+    margin-right: 60px;
+    justify-content: space-around;   
+}
+
+.col-6 {
+    max-width: 50%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    float: left
+    
+ 
+} 
+.home-banners{
+    display: flex;
+    position: relative;
+    
+    width: 100%;
+   
+}
+
+.box-banner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 15px;
+    
+}
+
+/*----footer*/
+
+.link{
+    color: white;
+    margin-top:20px;
+    
+}  
+.redessociales{
+    width:20px;
+} 
+.tarjetas{
+    width: 300px;
+    display: block;
+    margin-top:20px;
+} 
+.logo1{
+    height: 100px;
+    width: 100px;
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-left: 0px;
+    margin-right:30px;
+}
+
+.footer{
+  background-color:rgb(233, 127, 41);
+  margin-bottom: 20px;
+}
+
+/*-------CarritoDeCompra(formato2)-----*/
+
+ #contenedorN{
+     width:1350px;
+     display:flex;
+     flex-wrap: wrap;
+     
+ } 
+ 
+ #ContenienteN{
+     width:800px;
+     margin-left: -40px;
+
+ } 
+ .detalles1{
+     background-color: rgb(255, 247, 180);
+ } 
+/*
+ .filas{
+     background-color: rgb(234, 252, 185);
+    }
+.filas3{
+    background-color: rgb(255, 254, 187);
+} 
+*/
+ .productoseleccionado {
+     width: 100px;
+ } 
+ .stockdeproducto {
+     background-color: rgb(218, 218, 218);
+     width: 70px;
+     margin-top:20px;
+      } 
+
+#carritoContenedor{
+    background-color: rgb(255, 226, 226);        
+    margin-left:20px;
+    width: 320px;
+    background-image: url(https://pulsonoticias.com.ar/wp-content/uploads/2019/08/compras.jpg);
+} 
+#margendeldialogo{
+margin-left: 52px;
+margin-top:5px;
+}
+.resumen{
+    width: 80%;
+    margin-bottom: -20px;
+    margin-left: 40px;
+
+} 
+.finalizar{
+    margin-left: 20px;
+    margin-top: 10px;
+} 
+.levite{
+    width: 300px;
+    height: 200px;
+    margin-left:10px;
+} 
+
+#subtotal{
+    border: solid 2px green;
+    opacity:0.6;
+    
+} 
+.dialogo{
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    background-color: green;
+    font-size:12px;
+
+} 
+
+/*----- formularioDeCarga ------ */
+.container-fluid-1{
+    background-color:rgb(233, 127, 41);
+    margin-bottom: 20px;
+} 
+.logo{
+        height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left: 0px;
+} 
+
+.logo4{
+    height: 100px;
+    width: 100px;
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-left: 40px;
+}
+
+
+ .volver{
+     margin-left: 200px;
+     margin-top: 40px;
+          
+ }
+ #volviendo {
+     background-color: rgb(26, 134, 32);
+     color:white;
+ }
+ #nombresenformulario {
+     margin-top: 20px;
+     margin-left: 80px;
+     margin-right: 30px;
+ }
+ #sectionCatalogo{
+     margin-top: 20px;
+
+ }
+ #contenedorDelFormulario{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+    border: solid 3px rgb(84, 139, 84);
+    border-radius: 20px;
+    color:rgb(24, 58, 24);
+ } 
+ .cuadrodeproducto{
+     margin-top:20px;
+ }  
+ .cuadro{
+    width: 400px;
+    height: 90px;
+    vertical-align: top;
+    
+ } 
+ .botoncatalogo{
+     margin-left:109px;
+    
+} 
+
+
+#cara{
+    margin-top: 20px;
+    background-color: rgb(24, 58, 24);
+}
+ .productos{
+     width: 300px;
+     height: 35px;
+     padding-left:10px;
+     margin-top:15px;
+     margin-right:0px;
+ } 
+ #cargarimagen{
+    margin-top:20px;
+    margin-left: 165px;
+    
+
+ }
+ #guardar{
+     width: 300px;
+     background-color:rgb(233, 127, 41);
+     margin-bottom:20px;
+     border-radius: 5px;
+     color:white;
+ }
+.reset {
+    background-color: rgb(252, 243, 236);
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 80px;
+}
+ .boton{
+     margin-top: 70px;
+     width: 300px;
+     margin-right: 200px;
+     margin-left: 200px;
+ } 
+ .footer{
+    background-color: white;
+        margin-top:30px;
+        border-top: 5px groove rgb(106, 124, 106);
+        width: 100vw;
+
+} 
+#ContProd{
+    background-color:rgb(247, 248, 247);
+    margin-bottom: 20px;
+} 
+.redessociales{
+    width:30px;
+    margin-top: 20px;    
+} 
+
+.tarjetas{
+    width: 300px;
+    display: block;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+} 
+
+.data{
+    height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:20px;
+        margin-left: 20px;
+        margin-right:30px;
+} 
+.data2{
+    height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:20px;
+        margin-left: 0px;
+        padding-right: 20px;
+} 
+.link{
+    color: green;
+    }
+
+ 
+/*----------Register----------*/
+#contenedorRegistro{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+}
+#sing-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 3px rgb(84, 139, 84);
+    padding: 50px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    color: rgb(19, 51, 19);
+}
+
+.h1{
+    margin-left: 0px;
+    color:rgb(84, 139, 84);
+}
+.boton{
+    margin-top: 70px;
+    width: 300px;
+    margin-right: 200px;
+    margin-left: 200px;
+} 
+#botonDeRegistro {
+    margin-top: 17px;
+    width: 318px;
+    background-color:rgb(250, 34, 34);
+    color: white;
+}
+#nombre{
+    width: 254px;
+} 
+#user{
+    width:258px;
+}
+#email {
+    width: 273px;
+}
+#password {
+    width: 230px;
+}
+#password2 {
+    width: 174px;
+}
+
+.logoRegistro{
+    height: 111px;
+        width: 116px;
+        margin-bottom:10px;
+        margin-top:39px;
+        margin-left: 17px;
+        margin-right: 93x;
+}
+ 
+/*------------productDetail ---------*/
+
+.logo{
+        height: 100px;
+        width: 100px;
+        margin-bottom:10px;
+        margin-top:10px;
+        margin-left: 0px;
+} 
+h1{
+    margin-left: 0px;
+}
+.boton{
+    margin-top: 70px;
+    width: 300px;
+    margin-right: 200px;
+    margin-left: 200px;
+s
+} 
+.img_product{
+    height: 300px;    
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-left: 0px;
+}
+.product{
+    text-align: center;
+}
+
+#contendorProductoDetalles{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+}
+/*-------------------LOGIN--------------*/
+#contenedorRegistro-1{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #8080802e;
+}
+#sing-form-2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 3px rgb(10, 97, 10);
+    padding: 50px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 16px;
+    color:black;
+} 
+.logoRegistro-login{
+    height: 174px;
+    width: 160px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: -11px;
+}
+
+.ingresar{
+    color: black;
+    margin-left: 99px;
+    margin-top:25px;
+    text-decoration: underline;
+} 
+
+#botonDeRegistro-2 {
+    margin-top: 17px;
+    width: 317px;
+    background-color: rgb(250, 34, 34);
+    color: white;
+    margin-bottom: 11px;
+    
+} 
+/*====== Products ======*/
+#products-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:#8080802e;
+  }
+  
+  .products-title {
+    font-size: 2.4em;
+    font-weight: 400;
+    color: var(--gray);
+  }
+  
+  .product-box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 300ms;
+    margin: 20px 0;
+  }
+  .estiloDelNombre{
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      text-align: justify;
+      text-decoration: none;
+  }
+
+  .estiloDelmensaje{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-align: justify;
+    text-decoration: none;
+} 
+
+  .estiloDelPrecio{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-align: right;
+    color: rgb(209, 12, 12);
+  } 
+  
+  .product-box a {
+    display: block;
+  }
+  
+  .product-box_image {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .product-box_data {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .product-box_data h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .product-box_data p {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--green);
+    margin: 0 0 0 10px;
+  }
+  
+  .product-box_data p {
+    font-size: 1.5em;
+    width: 100%;
+    color: var(--gray);
+    margin: 0;
+    height: 0;
+    transition: 300ms;
+    overflow: hidden;
+    font-family: serif;
+    text-decoration-style: none;
+
+  }
+  
+  .product-box_data i {
+    color: var(--green);
+    font-size: 1.8em;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+  }
+  
+  .product-box:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .product-box:hover p{
+    height: 40px;
+    margin-top: 15px;
+  }
+  
+  .product-box:hover i{
+    transform: rotate(360deg);
+    box-shadow: 0 0 5px var(--green);
+  }
+
+  /*-------------*/
+   {
+    box-sizing-1: border-box;
+  }
+  
+  /*html, body {
+    min-height: 100vh;
+    margin: 0;
+    font-size: 10px;
+  }
+  
+  body {
+    font-family: var(--base-font-family);
+    font-weight: 300;
+    background-color: var(--light-gray);
+  }
+  
+  ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+  }
+  */
+  figure {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  /*img {
+    width: 100%;
+  }*/
+  
+  #imagenfruta{
+      width:5%;
+  }
+
+  input {
+    font-family: inherit;
+  }
+  
+  #contenedorRegistro-3{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255); 
+} 
+    
+
+    #sing-form-3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 3px rgb(10, 97, 10);
+        padding: 50px;
+        /*width: 100%;*/
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 16px;
+        color:black;
+ } 
+ .botoncatalogo-3{
+    margin-left:0px;
+   
+} 
+
+.productos-3{
+    width: 255px;
+    height: 35px;
+    padding-left:10px;
+    margin-top:15px;
+    margin-bottom:30px;
+} 
+#botonDeRegistro-3 {
+    margin-top: 17px;
+    width: 90px;
+    background-color: rgb(250, 34, 34);
+    color: white;
+    margin-bottom: 11px;
+    margin-right: auto;
+    margin-left: auto;
+    
+} 
