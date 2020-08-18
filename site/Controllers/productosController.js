@@ -33,7 +33,7 @@ let productosController = {
    listado: function(req, res){
         db.Product.findAll()
             .then(function(productos){
-             res.render("listadoProductos", {productos:productos});
+               res.render("listadoProductos", {productos:productos});
 
             })
 
@@ -69,7 +69,14 @@ let productosController = {
             }
         });
         res.redirect("/productos/crear");
-    }
+    }   
+    
+    editarOtro: function(req, res){
+        db.Producto.findByPk(req.params.id)
+            .then(function(productos){
+                return res.render("editarProductos", {productos:productos});
+
+            })
 
 
 }
