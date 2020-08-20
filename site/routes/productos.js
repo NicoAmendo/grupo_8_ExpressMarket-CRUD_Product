@@ -28,8 +28,10 @@ router.get("/", productosController.listado);
 
 // Edición
 router.get("/editar/:id", productosController.editar);
-router.post("/editar/:id", productosController.actualizar);
+router.post("/editar/:id",upload.any(), productosController.actualizar);
 
+//detalle
+router.get("/:id", productosController.detalle);
 
 // Eliminar
 router.post("/borrar/:id", productosController.borrar);

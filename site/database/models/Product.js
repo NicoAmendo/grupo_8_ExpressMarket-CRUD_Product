@@ -38,15 +38,15 @@ module.exports = function(sequelize, dataTypes){
     
     Products.associate = function(models) {
         
-        Products.belongsTo(models.Categoria,{ //de mucho a uno
+       Products.belongsTo(models.Categoria,{ //de mucho a uno
             as: "categoria",
-            foreignkey: "categoria_id"
+            foreignKey: "categoria_id"
         });
 
         Products.belongsToMany(models.User,{ //de muhco muhcos
             as: "users",
             through: "users_products", //como se llama la tabla intermedia
-            foreignkey: "id", //aca no se si va el otherKey porque en la tabla no tiene
+            foreignKey: "id", //aca no se si va el otherKey porque en la tabla no tiene
             otherKey: "users_id",
             timestamps: false
         });

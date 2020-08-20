@@ -31,7 +31,9 @@ let productosController = {
    },
 
    listado: function(req, res){
-        db.Product.findAll()
+        db.Product.findAll({
+            include: ["categoria"]
+         })
             .then(function(productos){
                res.render("listadoProductos", {productos:productos});
 
@@ -40,38 +42,54 @@ let productosController = {
     },
 
     editar: function(req, res){
-        db.Producto.findByPk(req.params.id)
-            .then(function(productos){
-                return res.render("editarProductos", {productos:productos});
+       let pedidoProducto = db.Product.findByPk(req.params.id);
+
+       let pedidoCategorias = db.Categoria.findAll();
+       
+        Promise.all([pedidoProducto, pedidoCategorias])
+              .then(function([producto, categorias]) {
+                    res.render("editarProducto", {producto:producto, categorias:categorias});
 
             })
     
     },
-    actualizar: function(req,res){
-        db.Producto.update({
+
+    actualizar: function(req, res){
+        db.Product.update({
             nombre: req.body.nombre,
             precio: req.body.precio,
-            categoria: req.body.categoria,
+            categoria_id: req.body.categoria,
             descripcion: req.body.descripcion,
-            imagen: req.body.imagen
+            imagen: req.files[0].filename
+ 
         },{
             where: {
                 id: req.params.id
             }
         });
-        res.redirect("/productos/crear");
+        res.redirect("/productos/");
 
     },
     borrar: function(req,res){
-        db.Producto.destroy({
+        db.Product.destroy({
             where:{
                 id: req.params.id
             }
         });
         res.redirect("/productos/crear");
-    }   
-    
+    },
+
+    detalle: function(req, res){
+        db.Product.findByPk(req.params.id,{
+            include:[{association:"categoria"}] 
+        })
+            .then(function(producto){
+                res.render("detalleproducto", {producto:producto});
+            })
+    }
 
 }
+
+
 
 module.exports = productosController;
