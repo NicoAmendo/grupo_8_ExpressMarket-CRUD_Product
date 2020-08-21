@@ -36,6 +36,7 @@ router.get("/:id", productosController.detalle);
 // Eliminar
 router.post("/borrar/:id", productosController.borrar);
 
-
+//search
+router.get('/search', productosController.search);
 
 module.exports = router;

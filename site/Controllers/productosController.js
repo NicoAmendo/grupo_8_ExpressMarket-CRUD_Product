@@ -1,6 +1,7 @@
 const db = require("../database/models");
 let path= require("path");
 const fs = require('fs');
+const { search } = require("../routes/productos");
 
 
 let productosController = {
@@ -86,10 +87,26 @@ let productosController = {
             .then(function(producto){
                 res.render("detalleproducto", {producto:producto});
             })
+    },
+
+    
+    search:  async (req, res) => {
+
+        const finalSearch = await db.Product.findAll({
+            where: {
+                name: {
+                    [db.Sequelize.Op.like]: '%' + req.query.keywords + '%'
+                }
+            }
+        });
+
+        res.render('products', {
+            productos: finalSearch
+        });
+
     }
 
 }
-
 
 
 module.exports = productosController;
